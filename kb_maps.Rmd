@@ -1,0 +1,33 @@
+---
+title: "kbolton_hw2"
+author: "Katie Bolton"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+require(rgdal)
+require(leaflet)
+require(leaflet.extras)
+require(dplyr)
+require(readxl)
+require(stringr)
+```
+
+## A few interesting basemaps
+
+
+```{r, controls}
+leaflet() %>%
+  # Basemaps
+  addTiles(group = "default") %>%
+  addProviderTiles(providers$Esri.NatGeoWorldMap, group = "NatGeo") %>%
+  addProviderTiles(providers$OpenStreetMap.BlackAndWhite, group = "BlackWhite") %>%
+  addProviderTiles(providers$JusticeMap.income, group = "income") %>%
+  # Layers control
+  addLayersControl(
+    baseGroups = c("default", "NatGeo", "BlackWhite", "income"),
+    options = layersControlOptions(collapsed = FALSE)
+  )
+```
+
+
