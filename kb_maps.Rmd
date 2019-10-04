@@ -10,6 +10,7 @@ require(leaflet)
 require(leaflet.extras)
 require(dplyr)
 require(stringr)
+require(tigris)
 ```
 
 ## A few interesting basemaps
@@ -34,11 +35,20 @@ leaflet() %>%
 ```{r, counties}
 counties <- readOGR("Florida_Counties/Florida_Counties.shp",
   layer = "Florida_Counties", GDAL1_integer64_policy = TRUE)
-leaflet(counties) %>%
-  addPolygons()
+results2016 <- read.csv("countyvotes.csv")
+countiesVote <- geo_join(counties, results2016, by = "COUNTYNAME")
+pal <- colorNumeric(
+  palette = colorRamp(c("#0000FF", "#FF0000"), interpolate="linear"),
+  domain = c(0,1)
+  )
+leaflet(countiesVote) %>%
+  addTiles() %>%
+  addPolygons(color = ~pal(Trumpvote), label = ~COUNTYNAME) %>%
+  addLegend("bottomleft", pal = pal, values = ~Trumpvote,
+            title = "proportion of votes for Trump")
 ```
 
-|
+
 ## FL bus transit routes 2008 
 
 ```{r, transit}
