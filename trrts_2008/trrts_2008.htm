@@ -1,0 +1,533 @@
+<HTML>
+<HEAD>
+<TITLE> FGDL Documentation </TITLE>
+<STYLE>
+          .pre { color: black; font-size: 12pt; font-weight: normal; font-family: courier; }
+	  strong {font-weight: normal; text-transform: uppercase; }
+</STYLE>
+</HEAD>
+<BODY>
+<table width="90%">
+<tr>
+<td>
+<strong><b>FLORIDA GEOGRAPHIC DATA LIBRARY DOCUMENTATION</b></strong><br />
+<p>
+<strong><b>TITLE: BUS TRANSIT ROUTES 2008</b></strong>
+</p>
+<pre>
+Geodataset Name:       TRRTS_2008
+Geodataset Type:       SHAPEFILE
+Geodataset Feature:    <strong>Polyline</strong>
+Feature Count:         15261
+</pre>
+</td>
+</tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr>
+<td>
+<strong><b>GENERAL DESCRIPTION:</b></strong>
+<table width="650">
+<tr>
+<td>
+This dataset contains Florida's public transit routes.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td></td></tr>
+<tr>
+<td>
+<pre>
+DATA SOURCE(S):                    Florida Transit Information System
+SCALE OF ORIGINAL SOURCE MAPS:     Unknown
+GEODATASET EXTENT:                 State of Florida<br />
+PUBLICATION DATE:                  2008
+TIME PERIOD OF CONTENT:            2008
+DOWNLOAD LINK:                     <A href="http://www.fgdl.org/metadataexplorer/explorer.jsp">http://www.fgdl.org/metadataexplorer/explorer.jsp</A>
+</pre>
+</td>
+</tr>
+</table>
+<P>
+<strong><b>FEATURE ATTRIBUTE TABLES:</b></strong>
+</P>
+<pre>Datafile Name: TRRTS_2008.DBF</pre>
+<table width="75%" cellspacing="0" cellpadding="0" border="0">
+<tr align="left">
+<td> ITEM NAME </td>
+<td>WIDTH</td>
+<td>TYPE</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">OBJECTID
+</DIV>
+</td>
+<td>4</td>
+<td>OID</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">Shape
+</DIV>
+</td>
+<td>4</td>
+<td>Geometry</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">ROUTE
+</DIV>
+</td>
+<td>20</td>
+<td>String</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">NAME
+</DIV>
+</td>
+<td>75</td>
+<td>String</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">COUNTY
+</DIV>
+</td>
+<td>30</td>
+<td>String</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">YEAR
+</DIV>
+</td>
+<td>5</td>
+<td>String</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">DESCRIPT
+</DIV>
+</td>
+<td>100</td>
+<td>String</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">FGDLAQDATE
+</DIV>
+</td>
+<td>36</td>
+<td>Date</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">AUTOID
+</DIV>
+</td>
+<td>4</td>
+<td>Integer</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">SHAPE.LEN
+</DIV>
+</td>
+<td>0</td>
+<td>Double</td>
+</tr>
+</table>
+<p>
+<strong><b>FEATURE ATTRIBUTE TABLES CODES AND VALUES:</b></strong>
+</p>
+<P />
+<table width="75%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td width="30%">Item<pre></pre></td>
+<td>Item Description<pre></pre></td>
+</tr>
+<tr valign="top">
+<td>OBJECTID</td>
+<td>
+Internal feature number.<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>Shape</td>
+<td>
+Feature geometry.<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>ROUTE</td>
+<td>
+Route number<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>NAME</td>
+<td>
+Name of route. Often simply the name of the street associated with route<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>COUNTY</td>
+<td>
+County or counties where routes are located<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>YEAR</td>
+<td>
+Year the routes were updated<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>DESCRIPT</td>
+<td>
+Field added by GeoPlan based on ROUTE and NAME fields. If there is a non-0 ROUTE field value and no NAME field value, then the DESCRIPT field value will be "ROUTE #". If there is a NAME field value and no ROUTE field value then the DESCRIPT field value will be "NAME". If there is a ROUTE field value and a NAME field value then it will be "ROUTE # - NAME". If there is no ROUTE field value or the value of the ROUTE field is 0 and no NAME field value then the DESCRIPT field will be "NO DESCRIPT AVAILABLE".<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>FGDLAQDATE</td>
+<td>
+FGDL added field based on date received from source<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>AUTOID</td>
+<td>
+Unique ID added by GeoPlan<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>SHAPE.LEN</td>
+<td>
+Length in meters<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td>
+<pre></pre>
+</td>
+</tr>
+</table>
+<strong><b>USER NOTES:</b></strong>
+<br />
+<table width="500">
+<tr>
+<td>
+<pre>
+This data is provided 'as is'. GeoPlan relied on the integrity
+of the original data layer's topology
+</pre>
+</td>
+</tr>
+</table>
+<table width="500">
+<tr>
+<td>
+<pre>
+This data is provided 'as is' by GeoPlan and is complete to our
+knowledge.
+</pre>
+</td>
+</tr>
+</table>
+<table width="500">
+<tr>
+<td>
+<pre>
+GeoPlan relied on the integrity of the attribute information within
+the original data.
+</pre>
+</td>
+</tr>
+</table>
+<table width="500">
+<tr>
+<td>
+<pre>
+</pre>
+</td>
+</tr>
+</table>
+<table width="500">
+<tr>
+<td>
+<pre>
+The data was created to serve as base information for use in GIS 
+systems for a variety of planning and analytical purposes.<br /><br />
+</pre>
+</td>
+</tr>
+</table>
+<table width="500">
+<tr>
+<td>
+<pre>
+This data is provided 'as is' and its horizontal positional accuracy
+has not been verified by GeoPlan<br /><br />
+</pre>
+</td>
+</tr>
+</table>
+<table width="500">
+<tr>
+<td>
+<pre>
+This data is provided 'as is' and its vertical positional accuracy
+has not been verified by GeoPlan<br /><br />
+</pre>
+</td>
+</tr>
+</table>
+<table width="550">
+<tr>
+<td>
+<pre>
+NONE</pre>
+<br />
+</td>
+</tr>
+</table>
+<table width="550">
+<tr>
+<td>
+<pre>
+The Florida Geographic Data Library is a collection of Geospatial Data
+compiled by the University of Florida GeoPlan Center with support from
+the Florida Department of Transportation. GIS data available in FGDL is
+collected from various state, federal, and other agencies (data sources)
+who are data stewards, producers, or publishers. The data available in
+FGDL may not be the most current version of the data offered by the
+data source. University of Florida GeoPlan Center makes no guarantees
+about the currentness of the data and suggests that data users check
+with the data source to see if more recent versions of the data exist.
+
+Furthermore, the GIS data available in the FGDL are provided 'as is'.
+The University of Florida GeoPlan Center makes no warranties, guaranties
+or representations as to the truth, accuracy or completeness of the data
+provided by the data sources. The University of Florida GeoPlan Center
+makes no representations or warranties about the quality or suitability
+of the materials, either expressly or implied, including but not limited
+to any implied warranties of merchantability, fitness for a particular
+purpose, or non-infringement. The University of Florida GeoPlan Center
+shall not be liable for any damages suffered as a result of using,
+modifying, contributing or distributing the materials.
+
+A note about data scale: 
+
+Scale is an important factor in data usage.  Certain scale datasets
+are not suitable for some project, analysis, or modeling purposes.
+Please be sure you are using the best available data. 
+
+1:24000 scale datasets are recommended for projects that are at the
+county level.
+1:24000 data should NOT be used for high accuracy base mapping such
+as property parcel boundaries.
+1:100000 scale datasets are recommended for projects that are at the
+multi-county or regional level.
+1:125000 scale datasets are recommended for projects that are at the
+regional or state level or larger.
+
+Vector datasets with no defined scale or accuracy should be
+considered suspect. Make sure you are familiar with your data
+before using it for projects or analysis. Every effort has been
+made to supply the user with data documentation. For additional
+information, see the References section and the Data Source Contact
+section of this documentation. For more information regarding
+scale and accuracy, see our webpage at:
+http://geoplan.ufl.edu/education.html</pre>
+<br />
+</td>
+</tr>
+</table>
+<strong><b>REFERENCES: </b></strong>
+<table width="60%">
+<tr>
+<td>
+<pre>
+Florida Transit Information System:
+http://www.ftis.org/index.html
+</pre>
+<br />
+</td>
+</tr>
+</table>
+<strong><b>DATA LINEAGE SUMMARY: </b></strong>
+<br />
+<table width="60%">
+<tr>
+<td>
+<pre>
+GeoPlan received this dataset from Albert Gan via email in October of 2008. 
+The data was received in individual shapefiles by county and was in the following 
+projection: Albers, NAD 83 HARN. The datasets were merged using the merge 
+tool in arcgis.
+
+- Added field NAME based on most appropriate name field provided
+- Added COUNTY field based on county where route is located
+- Added year field based on currency of data
+- Added DESCRIPT field based on ROUTE
+- Trimed leading whitespaces in DESCRIPT field 
+- Added FGDLAQDATE based on date downloaded from source
+- Upcased all fields
+- Original file received was named routes.zip which contained 26 
+  folders containing routes for specific areas
+Process Date: 20081120
+<br />
+Updated DESCRIPT field by doing the following:
+If there is a non-0 ROUTE field value and no NAME field value, then the 
+DESCRIPT field value will be "ROUTE  #". If there is a NAME field value and no 
+ROUTE field value then the DESCRIPT field value will be "NAME". If  there is a 
+ROUTE field value and a NAME field value then it will be "ROUTE # - NAME". If 
+there is no ROUTE  field value or the value of the ROUTE field is 0 and no NAME 
+field value then the DESCRIPT field will be "NO  DESCRIPT AVAILABLE".
+Process Date: 20090610
+<br />
+Data imported to ArcSDE and exported as a shapefile.
+Process Date: 20090610
+<br />
+Dataset copied.
+Process Date: 20090610
+<br />
+</pre>
+</td>
+</tr>
+</table>
+<strong><b>MAP PROJECTION PARAMETERS: </b></strong>
+<br />
+<pre>
+Projection                          ALBERS
+Datum                               HPGN
+Units                               METERS
+Spheroid                            GRS1980
+1st Standard Parallel               24  0  0.000
+2nd Standard Parallel               31 30  0.000
+Central Meridian                   -84 00  0.000
+Latitude of Projection's Origin     24  0  0.000
+False Easting (meters)              400000.00000
+False Northing (meters)             0.00000
+</pre>
+<p>
+<strong><b>DATA SOURCE CONTACT (S):</b></strong>
+</p>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td>
+<pre>
+Name:
+Abbr. Name:
+Address:
+
+
+Phone:
+
+Web site:
+E-mail:
+Contact Person:
+         Phone:
+        E-mail:
+</pre>
+</td>
+<td valign="top"><pre>Florida Transit Information System
+FTIS
+10555 W. Flagler Street
+Miami, FL
+33174
+305-348-3116
+<br />
+http://www.ftis.org/contact.aspx
+gana@fiu.edu
+Albert Gan
+</pre>
+</td>
+</tr>
+</table>
+<br />
+<strong><b>FGDL CONTACT:</b></strong>
+<pre>
+Name:                   FLORIDA GEOGRAPHIC DATA LIBRARY
+Abbr. Name:             FGDL
+Address:                Florida Geographic Data Library
+                        431 Architecture Building
+                        PO Box 115706
+                        Gainesville, FL  32611-5706
+Web site:               <a href="http://www.fgdl.org">http://www.fgdl.org</a>
+
+Contact FGDL: 
+
+      Technical Support:	        <a href="http://www.fgdl.org/fgdlfeed.html">http://www.fgdl.org/fgdlfeed.html</a>
+      FGDL Frequently Asked Questions:  <a href="http://www.fgdl.org/fgdlfaq.html">http://www.fgdl.org/fgdlfaq.html</a>
+      FGDL Mailing Lists:		<a href="http://www.fgdl.org/fgdl-l.html">http://www.fgdl.org/fgdl-l.html</a>
+      For FGDL Software:                <a href="http://www.fgdl.org/software.html">http://www.fgdl.org/software.html</a>
+</pre>
+</BODY>
+</HTML>

@@ -9,7 +9,6 @@ require(rgdal)
 require(leaflet)
 require(leaflet.extras)
 require(dplyr)
-require(readxl)
 require(stringr)
 ```
 
@@ -30,4 +29,32 @@ leaflet() %>%
   )
 ```
 
+## Counties in Florida Shapefile
 
+```{r, counties}
+counties <- readOGR("Florida_Counties/Florida_Counties.shp",
+  layer = "Florida_Counties", GDAL1_integer64_policy = TRUE)
+leaflet(counties) %>%
+  addPolygons()
+```
+
+|
+## FL bus transit routes 2008 
+
+```{r, transit}
+buses <- readOGR("trrts_2008/trrts_2008.shp",
+  layer = "trrts_2008", GDAL1_integer64_policy = TRUE)
+buses <- spTransform(buses, CRS("+proj=longlat +datum=WGS84 +no_defs"))
+leaflet(buses) %>%
+  addPolylines()
+```
+
+## FL mobile home parks 2019
+
+```{r, mobile-home-parks}
+mobileHomes <- read.csv("Mobile_Home_Parks_in_Florida_2019.csv")
+colnames(mobileHomes)[1] <- "X"
+leaflet(mobileHomes) %>%
+  addTiles() %>%
+  addCircleMarkers(lng = ~X, lat = ~Y, radius = 1)
+```

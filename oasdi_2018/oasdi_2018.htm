@@ -1,0 +1,889 @@
+<HTML>
+<HEAD>
+<TITLE> FGDL Documentation </TITLE>
+<STYLE>
+          .pre { color: black; font-size: 12pt; font-weight: normal; font-family: courier; }
+	  strong {font-weight: normal; text-transform: uppercase; }
+</STYLE>
+</HEAD>
+<BODY>
+<table width="90%">
+<tr>
+<td>
+<strong><b>FLORIDA GEOGRAPHIC DATA LIBRARY DOCUMENTATION</b></strong><br />
+<p>
+<strong><b>TITLE: SOCIAL SECURITY (OASDI) BENEFICIARIES IN THE STATE OF FLORIDA BY ZIP CODE - 2018</b></strong>
+</p>
+<pre>
+Geodataset Name:       OASDI_2018
+Geodataset Type:       SHAPEFILE
+Geodataset Feature:    <strong>Polygon</strong>
+Feature Count:         998
+</pre>
+</td>
+</tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr>
+<td>
+<strong><b>GENERAL DESCRIPTION:</b></strong>
+<table width="650">
+<tr>
+<td>
+This dataset represents the Social Security beneficiary population at the ZIP Code level for the State of Florida. It presents basic program data on the number and type of beneficiaries and the amount of benefits paid in each ZIP Code. It also shows the number of beneficiaries aged 65 or older.  This dataset was created using the boundaries of the 2012 Florida ZIP Code Areas (Five-Digit) polygon layer and the boundaries of the 2018 Tiger/Line ZCTA dataset
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td></td></tr>
+<tr>
+<td>
+<pre>
+DATA SOURCE(S):                    University of Florida GeoPlan Center
+SCALE OF ORIGINAL SOURCE MAPS:     100000
+GEODATASET EXTENT:                 State of Florida<br />
+PUBLICATION DATE:                  20190701
+TIME PERIOD OF CONTENT:            2018
+DOWNLOAD LINK:                     <A href="http://www.fgdl.org/metadataexplorer/explorer.jsp">http://www.fgdl.org/metadataexplorer/explorer.jsp</A>
+</pre>
+</td>
+</tr>
+</table>
+<P>
+<strong><b>FEATURE ATTRIBUTE TABLES:</b></strong>
+</P>
+<pre>Datafile Name: OASDI_2018.DBF</pre>
+<table width="75%" cellspacing="0" cellpadding="0" border="0">
+<tr align="left">
+<td> ITEM NAME </td>
+<td>WIDTH</td>
+<td>TYPE</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">OBJECTID
+</DIV>
+</td>
+<td>4</td>
+<td>OID</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">Shape
+</DIV>
+</td>
+<td>4</td>
+<td>Geometry</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">PO_NAME
+</DIV>
+</td>
+<td>30</td>
+<td>String</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">ZIP
+</DIV>
+</td>
+<td>5</td>
+<td>String</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">CA_NAME
+</DIV>
+</td>
+<td>35</td>
+<td>String</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">TOTAL
+</DIV>
+</td>
+<td>8</td>
+<td>Double</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">RETIRED
+</DIV>
+</td>
+<td>8</td>
+<td>Double</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">DISABLED
+</DIV>
+</td>
+<td>8</td>
+<td>Double</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">WPARENTS
+</DIV>
+</td>
+<td>8</td>
+<td>Double</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">SPOUSES
+</DIV>
+</td>
+<td>8</td>
+<td>Double</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">CHILDREN
+</DIV>
+</td>
+<td>8</td>
+<td>Double</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">ALLBENSM
+</DIV>
+</td>
+<td>8</td>
+<td>Double</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">RETIREDM
+</DIV>
+</td>
+<td>8</td>
+<td>Double</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">WPARENTSM
+</DIV>
+</td>
+<td>8</td>
+<td>Double</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">OVER65
+</DIV>
+</td>
+<td>8</td>
+<td>Double</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">POP2010
+</DIV>
+</td>
+<td>4</td>
+<td>Integer</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">POP10_SQMI
+</DIV>
+</td>
+<td>8</td>
+<td>Double</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">SQMI
+</DIV>
+</td>
+<td>8</td>
+<td>Double</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">DESCRIPT
+</DIV>
+</td>
+<td>30</td>
+<td>String</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">UPDATE_DAY
+</DIV>
+</td>
+<td>36</td>
+<td>Date</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">FGDLAQDATE
+</DIV>
+</td>
+<td>36</td>
+<td>Date</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">AUTOID
+</DIV>
+</td>
+<td>4</td>
+<td>Integer</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">SHAPE.AREA
+</DIV>
+</td>
+<td>0</td>
+<td>Double</td>
+</tr>
+<tr>
+<td>
+<DIV align="left">SHAPE.LEN
+</DIV>
+</td>
+<td>0</td>
+<td>Double</td>
+</tr>
+</table>
+<p>
+<strong><b>FEATURE ATTRIBUTE TABLES CODES AND VALUES:</b></strong>
+</p>
+<P />
+<table width="75%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td width="30%">Item<pre></pre></td>
+<td>Item Description<pre></pre></td>
+</tr>
+<tr valign="top">
+<td>OBJECTID</td>
+<td>
+Internal feature number.<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>Shape</td>
+<td>
+Feature geometry.<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>PO_NAME</td>
+<td>
+The post office name.<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>ZIP</td>
+<td>
+The five-digit number used by the postal service to identify an area where mail is delivered.<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>CA_NAME</td>
+<td>
+The post office city alias name.<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>TOTAL</td>
+<td>
+Total number of beneficiaries with benefits in current-payment status.  0 = Data not available.<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>RETIRED</td>
+<td>
+Number of beneficiaries with benefits in current-payment status who are retired workers.  0 = Data not available.<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>DISABLED</td>
+<td>
+Number of beneficiaries with benefits in current-payment status who are disabled workers.  0 = Data not available.<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>WPARENTS</td>
+<td>
+Number of beneficiaries with benefits in current-payment status who are widows or widowers and parents.  0 = Data not available.<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>SPOUSES</td>
+<td>
+Number of beneficiaries with benefits in current-payment status who are spouses.  0 = Data not available.<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>CHILDREN</td>
+<td>
+Number of beneficiaries with benefits in current-payment status who are children.  0 = Data not available.<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>ALLBENSM</td>
+<td>
+Total monthly benefits (thousands of dollars) for all beneficiaries.  0 = Data not available.<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>RETIREDM</td>
+<td>
+Total monthly benefits (thousands of dollars) for retired workers.  0 = Data not available.<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>WPARENTSM</td>
+<td>
+Total monthly benefits (thousands of dollars) for widows or widowers and parents.  0 = Data not available.<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>OVER65</td>
+<td>
+Number of OASDI beneficiaries aged 65 or older.  0 = Data not available.<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>POP2010</td>
+<td>
+The 2010 estimated population of the ZIP Code area. 0 = Data not available.<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>POP10_SQMI</td>
+<td>
+The 2010 estimated population of the ZIP Code area per square mile. 0 = Data not available.<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>SQMI</td>
+<td>
+The area of the ZIP Code polygon in square miles using Albers Equal Area Projection.<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>DESCRIPT</td>
+<td>
+Based on PO_NAME.<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>UPDATE_DAY</td>
+<td>
+The date the data was last updated by the Source<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>FGDLAQDATE</td>
+<td>
+The date FGDL acquired the data from the Source.<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>AUTOID</td>
+<td>
+No description<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>SHAPE.AREA</td>
+<td>
+No description<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+<tr valign="top">
+<td>SHAPE.LEN</td>
+<td>
+No description<table>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td>
+<pre></pre>
+</td>
+</tr>
+</table>
+<strong><b>USER NOTES:</b></strong>
+<br />
+<table width="500">
+<tr>
+<td>
+<pre>
+This data is provided 'as is'. GeoPlan relied on the integrity
+of the original data layer's topology
+</pre>
+</td>
+</tr>
+</table>
+<table width="500">
+<tr>
+<td>
+<pre>
+This data is provided 'as is' by GeoPlan and is complete to our
+knowledge.
+</pre>
+</td>
+</tr>
+</table>
+<table width="500">
+<tr>
+<td>
+<pre>
+GeoPlan relied on the integrity of the attribute information within
+the original data.
+</pre>
+</td>
+</tr>
+</table>
+<table width="500">
+<tr>
+<td>
+<pre>
+Please Note: 
+Of the 1384 total Social Security zip code records in the original fl.xlsx table 
+only 975 are represented in the new OASDI_2018.shp layer.  This is because 409 of the 
+zip code records in the fl.xlsx table are zip codes of P.O. Box locations which are not 
+represented/mapped in the statewide ZIPBND_2012.shp layer.   Additionally please beware that 
+there are 23 zip code records in the OASDI_2018.shp layer that have no data available.
+
+--------------------------------------------------------------------------------
+
+OASDI Beneficiaries by State and ZIP Code, 2018
+NOTES
+This annual publication focuses on the Social Security beneficiary population people
+receiving Old-Age, Survivors, and Disability Insurance (OASDI) benefits at the ZIP
+Code level. It presents basic program data on the number and type of beneficiaries and
+the amount of benefits paid in each state, Social Security Administration field office, and
+ZIP Code. It also shows the number of men and women aged 65 or older receiving benefits.
+The data include only persons whose benefits are currently payable. Those whose
+benefits were withheld are excluded.
+The data in this report are derived from the Master Beneficiary Record, the principal
+administrative file of Social Security beneficiaries. The Social Security Detailed Office
+Organization Resource System (DOORS) file was used to associate the field office data
+with the ZIP Codes. Data for field offices in each state include only beneficiaries in that
+state. However, some Social Security field offices serve residents of more than one
+state. To obtain field office totals in these situations, it is necessary to combine data for
+each state served by the field office. The data include only persons whose benefits are
+currently payable. Those whose benefits were withheld are excluded.
+To avoid disclosing the reason for Social Security eligibility of small groups and the
+amounts of benefits received, a controlled rounding procedure was used for field office
+and ZIP Code data. Data are not shown for ZIP Codes with fewer than 15 beneficiaries.
+Under the controlled rounding procedure, ZIP Code data on the number of beneficiaries
+shown in the table are changed according to the following formula:
+1. If the number is divisible by 5 (ends in 0 or 5), then the numbers are not changed.
+2. Otherwise, the number is rounded either to the next higher number divisible by 5
+or the next lower number divisible by 5, in such a way that the difference between
+each rounded and unrounded cell value, each rounded and unrounded row total,
+and each rounded and unrounded column total is less than 5.
+The dollar amounts in the tables are rounded to the nearest thousand.
+Cherice Jefferies in the Office of Statistical Analysis and Support programmed and
+compiled the data for this report. Staff of the Office of Dissemination edited the report
+and prepared it for web publication.
+
+Source: https://www.ssa.gov/policy/docs/statcomps/oasdi_zip/2018/oasdi_zip18.pdf
+--------------------------------------------------------------------------------
+
+Largest scale when displaying the data: 1:250,000.  
+
+U.S. ZIP Code Areas (Five-Digit) represents five-digit ZIP Code areas 
+used by the U.S. Postal Service to deliver mail more effectively. 
+The first digit of a five-digit ZIP Code divides the United States into 10 
+large groups of states numbered from 0 in the Northeast to 9 in the far 
+West. Within these areas, each state is divided into an average of 10 
+smaller geographical areas, identified by the second and third digits. 
+These digits, in conjunction with the first digit, represent a sectional 
+center facility or a mail processing facility area. The fourth and fifth digits 
+identify a post office, station, branch or local delivery area.
+
+The polygons identify areas where mail is delivered 
+(from a city block or two to a whole rural town) within United States.<br /><br />
+</pre>
+</td>
+</tr>
+</table>
+<table width="500">
+<tr>
+<td>
+<pre>
+Serve as base information for use in GIS systems for general planning, 
+analytical, and research purposes.<br /><br />
+</pre>
+</td>
+</tr>
+</table>
+<table width="500">
+<tr>
+<td>
+<pre>
+This data is provided 'as is' and its horizontal positional accuracy
+has not been verified by GeoPlan<br /><br />
+</pre>
+</td>
+</tr>
+</table>
+<table width="500">
+<tr>
+<td>
+<pre>
+This data is provided 'as is' and its vertical positional accuracy
+has not been verified by GeoPlan<br /><br />
+</pre>
+</td>
+</tr>
+</table>
+<table width="550">
+<tr>
+<td>
+<pre>
+NONE</pre>
+<br />
+</td>
+</tr>
+</table>
+<table width="550">
+<tr>
+<td>
+<pre>
+The Florida Geographic Data Library is a collection of Geospatial Data
+compiled by the University of Florida GeoPlan Center with support from
+the Florida Department of Transportation. GIS data available in FGDL is
+collected from various state, federal, and other agencies (data sources)
+who are data stewards, producers, or publishers. The data available in
+FGDL may not be the most current version of the data offered by the
+data source. University of Florida GeoPlan Center makes no guarantees
+about the currentness of the data and suggests that data users check
+with the data source to see if more recent versions of the data exist.
+
+Furthermore, the GIS data available in the FGDL are provided 'as is'.
+The University of Florida GeoPlan Center makes no warranties, guaranties
+or representations as to the truth, accuracy or completeness of the data
+provided by the data sources. The University of Florida GeoPlan Center
+makes no representations or warranties about the quality or suitability
+of the materials, either expressly or implied, including but not limited
+to any implied warranties of merchantability, fitness for a particular
+purpose, or non-infringement. The University of Florida GeoPlan Center
+shall not be liable for any damages suffered as a result of using,
+modifying, contributing or distributing the materials.
+
+A note about data scale: 
+
+Scale is an important factor in data usage.  Certain scale datasets
+are not suitable for some project, analysis, or modeling purposes.
+Please be sure you are using the best available data. 
+
+1:24000 scale datasets are recommended for projects that are at the
+county level.
+1:24000 data should NOT be used for high accuracy base mapping such
+as property parcel boundaries.
+1:100000 scale datasets are recommended for projects that are at the
+multi-county or regional level.
+1:125000 scale datasets are recommended for projects that are at the
+regional or state level or larger.
+
+Vector datasets with no defined scale or accuracy should be
+considered suspect. Make sure you are familiar with your data
+before using it for projects or analysis. Every effort has been
+made to supply the user with data documentation. For additional
+information, see the References section and the Data Source Contact
+section of this documentation. For more information regarding
+scale and accuracy, see our webpage at:
+http://geoplan.ufl.edu/education.html</pre>
+<br />
+</td>
+</tr>
+</table>
+<strong><b>REFERENCES: </b></strong>
+<table width="60%">
+<tr>
+<td>
+<pre>
+OASDI Beneficiaries by State and ZIP Code, 2018
+(released July 2019)
+http://www.ssa.gov/policy/docs/statcomps/oasdi_zip/2018/index.html
+
+OASDI Beneficiaries by State and ZIP Code, 2010
+http://www.ssa.gov/policy/docs/statcomps/oasdi_zip/2010/oasdi_zip10.pdf
+
+TIGER/Line Shapefile, 2018, 2010 nation, U.S., 2010 Census 5-Digit ZIP Code Tabulation Area (ZCTA5) National
+https://catalog.data.gov/dataset/tiger-line-shapefile-2018-2010-nation-u-s-2010-census-5-digit-zip-code-tabulation-area-zcta5-na
+</pre>
+<br />
+</td>
+</tr>
+</table>
+<strong><b>DATA LINEAGE SUMMARY: </b></strong>
+<br />
+<table width="60%">
+<tr>
+<td>
+<pre>
+The GeoPlan Center performed the following steps in order to 
+create the 2018 OASDI data layer.
+
+-Downloaded 1384 records as an xlsx from https://www.ssa.gov/policy/docs/statcomps/oasdi_zip/2018/index.html 
+ and converted to csv after formatting in excel.
+-Brought csv into arcmap, exported it as an DBF and joined it to FGDL layer: zipbnd_2012. 
+ Of the 1384 records in the DBF, only 959 correctly joined based on ZIP. 
+-This is because 425 records had zipcodes that were not standard, meaning they were PO boxes or another unique 
+ form of mail storage
+-To recover some of the lost data in the OASDI dbf, we were able to extract PO box zipcodes for the state of FL from 
+ https://www.zip-codes.com/state/fl.asp
+-Copy and pasted page with all 1472 zipcodes for FL to a excel sheet, and then deleted all "Standard" zipcodes from 
+ the pile.
+ This was because we already caught those using the FGDL layer: zipbnd_2012. 
+-This excel sheet was then converted to a csv and exported as a DBF in arcmap, with 542 total PO box/ unique zipcodes
+-We then joined these 542 records with the 2018 tiger ZCTA dataset based on the ZIP field, of the 542, 64 records 
+ joined successfully based on zip. 
+ This successfully gave these PO box zipcodes representative polygons.
+-These 64 records were then extracted as a new polygon shapefile, which we then joined to the original OASDI 
+ DBF based on ZIP. Of the 64 PO box records, 55 successfully joined to the OASDI dataset.
+-Last, we merged these 55 with the 959 records that were successfully joined to the FGDL layer: zipbnd_2012, 
+ making 1014 total records. 
+-Added new zip field as text instead of long 
+-Used .zfil() within the field calculator to add back leading zeros within the ZIP field lost in the merge
+
+-added FGDLAQDATE based on the date the data was obtained by the GeoPlan Center
+-added DESCRIPT field based on the field PO_NAME
+-added UPDATE_DAY field based on the publication date of the data that was used to update the field
+
+PLEASE NOTE:
+-Upon checking the data and summarizing some fields, 16 duplicates were found. These duplicates were fixed by using 
+ the merge editing tool to remove them, by merging the duplicates together, using the polygons that contained data as the 
+ master. Each duplicate contained one record with data, one without. The ones without were merged into the ones with data. 
+-998 total records after clean-up
+-Records with no OASDI data contained values of "-99", these were all recalculated to have values of "0" instead to match 
+ the format of the previous FGDL OASDI layer from 2010.
+-23 records in total have no OASDI data
+Process Date: 20190717
+<br />
+Dataset copied.
+Process Date: 20190728
+<br />
+</pre>
+</td>
+</tr>
+</table>
+<strong><b>MAP PROJECTION PARAMETERS: </b></strong>
+<br />
+<pre>
+Projection                          ALBERS
+Datum                               HPGN
+Units                               METERS
+Spheroid                            GRS1980
+1st Standard Parallel               24  0  0.000
+2nd Standard Parallel               31 30  0.000
+Central Meridian                   -84 00  0.000
+Latitude of Projection's Origin     24  0  0.000
+False Easting (meters)              400000.00000
+False Northing (meters)             0.00000
+</pre>
+<p>
+<strong><b>DATA SOURCE CONTACT (S):</b></strong>
+</p>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td>
+<pre>
+Name:
+Abbr. Name:
+Address:
+
+
+Phone:
+
+Web site:
+E-mail:
+Contact Person:
+         Phone:
+        E-mail:
+</pre>
+</td>
+<td valign="top"><pre>University of Florida GeoPlan Center
+GeoPlan
+431 Architecture PO Box 115706
+Gainesville, FL
+32611-5706
+
+<br />
+http://www.fgdl.org/
+data@fgdl.org
+
+</pre>
+</td>
+</tr>
+</table>
+<br />
+<strong><b>FGDL CONTACT:</b></strong>
+<pre>
+Name:                   FLORIDA GEOGRAPHIC DATA LIBRARY
+Abbr. Name:             FGDL
+Address:                Florida Geographic Data Library
+                        431 Architecture Building
+                        PO Box 115706
+                        Gainesville, FL  32611-5706
+Web site:               <a href="http://www.fgdl.org">http://www.fgdl.org</a>
+
+Contact FGDL: 
+
+      Technical Support:	        <a href="http://www.fgdl.org/fgdlfeed.html">http://www.fgdl.org/fgdlfeed.html</a>
+      FGDL Frequently Asked Questions:  <a href="http://www.fgdl.org/fgdlfaq.html">http://www.fgdl.org/fgdlfaq.html</a>
+      FGDL Mailing Lists:		<a href="http://www.fgdl.org/fgdl-l.html">http://www.fgdl.org/fgdl-l.html</a>
+      For FGDL Software:                <a href="http://www.fgdl.org/software.html">http://www.fgdl.org/software.html</a>
+</pre>
+</BODY>
+</HTML>
