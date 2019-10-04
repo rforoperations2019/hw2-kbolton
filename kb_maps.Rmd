@@ -56,6 +56,7 @@ buses <- readOGR("trrts_2008/trrts_2008.shp",
   layer = "trrts_2008", GDAL1_integer64_policy = TRUE)
 buses <- spTransform(buses, CRS("+proj=longlat +datum=WGS84 +no_defs"))
 leaflet(buses) %>%
+  addProviderTiles(providers$OpenStreetMap.BlackAndWhite) %>%
   addPolylines()
 ```
 
@@ -64,7 +65,16 @@ leaflet(buses) %>%
 ```{r, mobile-home-parks}
 mobileHomes <- read.csv("Mobile_Home_Parks_in_Florida_2019.csv")
 colnames(mobileHomes)[1] <- "X"
+buses <- readOGR("trrts_2008/trrts_2008.shp",
+  layer = "trrts_2008", GDAL1_integer64_policy = TRUE)
+buses <- spTransform(buses, CRS("+proj=longlat +datum=WGS84 +no_defs"))
 leaflet(mobileHomes) %>%
   addTiles() %>%
-  addCircleMarkers(lng = ~X, lat = ~Y, radius = 1)
+  addCircleMarkers(lng = ~X, lat = ~Y, radius = 1, group = "Mobile Home Parks") %>%
+  addPolylines(data = buses, group = "Public Transit Routes") %>%
+    # Layers control
+  addLayersControl(
+    baseGroups = c("Mobile Home Parks", "Public Transit Routes"),
+    options = layersControlOptions(collapsed = FALSE)
+  )
 ```
